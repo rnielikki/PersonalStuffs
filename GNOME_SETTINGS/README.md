@@ -1,4 +1,4 @@
-#MY OWN GNOME SETTINGS
+# MY OWN GNOME SETTINGS
 
 gtk.css contains:
 - sharp corner (border-radius:0)

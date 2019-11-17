@@ -1,0 +1,8 @@
+#FROM https://misc.flogisoft.com/bash/tip_colors_and_formatting
+
+#USER COLOR
+PS1="\e[48;5;17;38;5;135m\u\e[0m\e[48;5;17;38;5;177m \h \e[0m\e[48;5;17;38;5;153m\W\e[0m "
+
+#ROOT COLOR
+PS1="\e[48;5;89;38;5;180m # \e[0m\e[48;5;52;38;5;225m\W\e[0m "
+

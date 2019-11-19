@@ -6,3 +6,18 @@ PS1="\e[48;5;17;38;5;135m\u\e[0m\e[48;5;17;38;5;177m \h \e[0m\e[48;5;17;38;5;153
 #ROOT COLOR
 PS1="\e[48;5;89;38;5;180m # \e[0m\e[48;5;52;38;5;225m\W\e[0m "
 
+if [ -f /etc/bashrc ]; then
+        . /etc/bashrc
+fi
+
+# User specific aliases and functions
+g() {
+   gcc -o $1 $1.c
+   ./$1
+}
+gl() {
+   gcc -$2 -o $1 $1.c
+   ./$1
+}
+PS1='\[\033[100m\]\[\033[96;1m\]\u\[\033[34m\]@\[\033[95m\]\h: \[\033[92m\]\W \[\033[0m\] '
+alias nstat='netstat -tuplen'
